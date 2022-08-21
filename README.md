@@ -8,7 +8,7 @@ A React Native component for amount or verification code input. It easily handle
 ## Demo
 Decimal Input            										|  Integer Input
 :--------------------------------------------------------------:|:--------------------------------------------------------------:
-<img src="./demo_decimal.png" alt="demo_decimal" width="350"/>  |  <img src="./demo_integer.png" alt="demo_integer" width="350"/>
+<img src="./screenshots/demo_decimal.png" alt="demo_decimal" width="350"/>  |  <img src="./screenshots/demo_integer.png" alt="demo_integer" width="350"/>
 
 ## Getting Started
 
@@ -28,12 +28,12 @@ yarn add react-native-numeric-pad
 
 ```
 
-npm i react-native-numeric-pad
+`npm i react-native-numeric-pad`
 
 Note: 
 This component has a peer dependency: "react-native": "^0.63.4", to smoothly match your project you may ues
 
-npm i react-native-numeric-pad --legacy-peer-deps
+`npm i react-native-numeric-pad --legacy-peer-deps`
 
 ```
   
@@ -47,7 +47,7 @@ import  NumericPad  from  'react-native-numeric-pad'
 
 <NumericPad
 	numLength={8}
-	onValueChange={()  => {}}
+	onValueChange={(v) => { setState(v)} }
 	allowDecimal={true}
 }/>
 ```
@@ -66,14 +66,14 @@ import  NumericPad  from  'react-native-numeric-pad'
 |buttonAreaStyle                |ViewStyle          |-                                                                                                       | No         |
 |buttonItemStyle                |ViewStyle          |-                                                                                                       | No         |
 |buttonTextStyle                |TextStyle          |` { color: '#000', fontSize: 30, fontWeight: '400' }`                                                   | No         |
-|numericDisabled                |boolean            |-                                                                                                       | No         |
+|numericDisabled                |boolean            |`false`                                                                                                 | No         |
 |accessible                     |boolean            |`false`                                                                                                 | No         |
 |buttonTextByKey                |object             |`{one: "1",two: "2",three: "3",four: "4",five: "5",six: "6",seven: "7",eight: "8",nine: "9",dot: '.',zero: "0",}`| No|
-|rightBottomButton              |React.Component    |-                                                                                                       | No         |
+|rightBottomButton              |React.Component    |`null`                                                                                                  | No         |
 |onRightBottomButtonPress       |func               |-                                                                                                       | No         |
-|rightBottomButtonDisabled      |boolean            |-                                                                                                       | No         |
+|rightBottomButtonDisabled      |boolean            |`false`                                                                                                 | No         |
 |rightBottomButtonSize          |number             |`60`                                                                                                    | No         |
-|rightBottomAccessibilityLabel  |string             |`right_bottom`                                                                                          | No         |
+|rightBottomAccessibilityLabel  |string             |`"right_bottom"`                                                                                          | No         |
 |rightBottomButtonItemStyle     |ViewStyle          |-                                                                                                       | No         |
 
 
@@ -106,7 +106,7 @@ import { deviceHeight, deviceWidth } from  '../../theme/devices'
 
 export  default  function  Widget ({ navigation, route }) {
 const [amount, setAmount] = useState('')
-const  numpadRef = useRef(null)
+const numpadRef = useRef(null)
 
 return (
   <View  style={styles.container}>

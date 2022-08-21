@@ -25,6 +25,7 @@
     "react-native": "^0.63.4"
   },
   "main": "index.js",
+  "types": "numericPadTypes.ts",
   "author": "RidicZhi",
   "license": "MIT",
   "scripts": {

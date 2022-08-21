@@ -43,18 +43,18 @@ const ViewHolder = () => {
 const NumericPad = React.forwardRef(
   (
     {
+      numLength,
+      allowDecimal,
+      onValueChange,
       buttonTextByKey,
       accessible,
       style,
-      onValueChange,
-      buttonAreaStyle,
       activeOpacity,
-      numLength,
       buttonSize,
       buttonItemStyle,
+      buttonAreaStyle,
       buttonTextStyle,
       numericDisabled,
-      allowDecimal,
       rightBottomButton,
       rightBottomButtonDisabled,
       rightBottomButtonSize = 60,
