@@ -1,16 +1,16 @@
 
-# React Native Numeric Pad
+# 📱 React Native Numeric Pad 📱
 
   
 
 A React Native component for amount or verification code input. It easily handles both decimals and integers, and runs smoothly for both IOS and Android. The design is simple and clear with numbers, dot, and one custom button.
 
-## Demo
+## 💃 Demo
 Decimal Input            										|  Integer Input
 :--------------------------------------------------------------:|:--------------------------------------------------------------:
 <img src="./screenshots/demo_decimal.png" alt="demo_decimal" width="350"/>  |  <img src="./screenshots/demo_integer.png" alt="demo_integer" width="350"/>
 
-## Getting Started
+## 🚀 Getting Started
 
   
 
@@ -28,16 +28,17 @@ yarn add react-native-numeric-pad
 
 ```
 
-`npm i react-native-numeric-pad`
+npm i react-native-numeric-pad
 
-Note: 
-This component has a peer dependency: "react-native": "^0.63.4", to smoothly match your project you may ues
+📗 Note
+This component has a peer dependency: "react-native": "^0.63.4", to smoothly match your 
+project you may ues:
 
-`npm i react-native-numeric-pad --legacy-peer-deps`
+npm i react-native-numeric-pad --legacy-peer-deps
 
 ```
   
-## Usage
+## 🛻 Usage
 
   
 ```
@@ -53,7 +54,7 @@ import  NumericPad  from  'react-native-numeric-pad'
 ```
 
 
-## Props
+## 👉🏼 Props
 
 | Prop                          | Type              | Default                                                                                                |  Required  |
 | ----------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------ | ---------- |
@@ -79,7 +80,7 @@ import  NumericPad  from  'react-native-numeric-pad'
 
   
 
-## Ref Actions
+## 👉🏼 Ref Actions
 
 `const numpadRef = useRef(null)`
 
@@ -92,7 +93,7 @@ import  NumericPad  from  'react-native-numeric-pad'
 
   
 
-## My Example
+## 🍗 My Example
 ```javascript
 
 import  React, { useState, useRef } from  'react'
@@ -205,7 +206,7 @@ const  styles = StyleSheet.create({
 
   
 
-## License
+## 📰 License
 
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
