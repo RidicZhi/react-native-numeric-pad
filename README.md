@@ -57,7 +57,7 @@ import  NumericPad  from  'react-native-numeric-pad'
 ```
 
 ## Demo
-<img src="./numeric_pad_example.png" alt="demo" width="200"/>
+<img src="./numeric_pad_example.png" alt="demo" width="400"/>
 
 ## Props
 
