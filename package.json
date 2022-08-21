@@ -1,6 +1,6 @@
 {
   "name": "react-native-numeric-pad",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "repository": {
     "type": "git",
     "url": "git://github.com/RidicZhi/react-native-numeric-pad"
@@ -18,7 +18,8 @@
     "amount keyboard",
     "finance app",
     "react native amount",
-    "react native decimal"
+    "react native decimal",
+    "amount number pad"
   ],
   "peerDependencies": {
     "react-native": "^0.63.4"
