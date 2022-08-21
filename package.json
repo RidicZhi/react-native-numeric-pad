@@ -1,6 +1,6 @@
 {
   "name": "react-native-numeric-pad",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/RidicZhi/react-native-numeric-pad"
@@ -22,10 +22,10 @@
     "amount number pad"
   ],
   "peerDependencies": {
-    "react-native": "^0.63.4"
+    "react-native": ">=0.58.0"
   },
   "main": "index.js",
-  "types": "numericPadTypes.ts",
+  "types": "numericPadTypes.d.ts",
   "author": "RidicZhi",
   "license": "MIT",
   "scripts": {
