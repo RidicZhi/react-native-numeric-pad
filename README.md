@@ -56,6 +56,8 @@ import  NumericPad  from  'react-native-numeric-pad'
 
 ```
 
+## Demo
+<img src="./numeric_pad_example.png" alt="demo" width="200"/>
 
 ## Props
 
@@ -90,19 +92,13 @@ import  NumericPad  from  'react-native-numeric-pad'
   
 
 | Prop | Description |
-
 | ----------------------------- | -----------------------------------------------------|
-
-|numpadRef.current.clearAll() |This method completely clears the entered code. |
-
-|numpadRef.current.clear() |This method only delete last number of entered code. |
+|numpadRef.current.clearAll()   |This method completely clears the entered code.       |
+|numpadRef.current.clear() 		|This method only delete last number of entered code.  |
 
   
 
-#### My Example
-
-  ![alt text](./numeric_pad_example.png 'Demo')
-
+## My Example
 ```javascript
 
 import  React, { useState, useRef } from  'react'
