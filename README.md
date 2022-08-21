@@ -57,8 +57,10 @@ import  NumericPad  from  'react-native-numeric-pad'
 ```
 
 ## Demo
-<img src="./demo_decimal.png" alt="demo_decimal" width="350"/>
-<img src="./demo_integer.png" alt="demo_integer" width="350"/>
+Decimal Input            										|  Integer Input
+:--------------------------------------------------------------:|:--------------------------------------------------------------:
+<img src="./demo_decimal.png" alt="demo_decimal" width="350"/>  |  <img src="./demo_integer.png" alt="demo_integer" width="350"/>
+
 
 ## Props
 
