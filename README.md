@@ -29,10 +29,18 @@ yarn add react-native-numeric-pad
 
 ```
 
-npm install --save react-native-numeric-pad
+npm i react-native-numeric-pad
 
 ```
 
+```
+
+Note: 
+This component has a peer dependency: "react-native": "^0.63.4", to smoothly match your project you may ues
+
+npm i react-native-numeric-pad --legacy-peer-deps
+
+```
   
 
 ## Usage
