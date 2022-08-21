@@ -1,0 +1,33 @@
+{
+  "name": "react-native-numeric-pad",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RidicZhi/react-native-numeric-pad"
+  },
+  "description": "A React Native component for amount or verification code input. It easily handles both decimals and integers, and runs smoothly for both IOS and Android. The design is simple and clear with numbers, dot, and one custom button.",
+  "keywords": [
+    "react-native",
+    "react-native-numeric-pad",
+    "numeric-pad",
+    "decimal pad",
+    "input amount",
+    "integer decimal",
+    "keyboard",
+    "verification code",
+    "amount keyboard",
+    "finance app",
+    "react native amount",
+    "react native decimal"
+  ],
+  "peerDependencies": {
+    "react-native": "^0.63.4"
+  },
+  "main": "index.js",
+  "author": "RidicZhi",
+  "license": "MIT",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "homepage": "https://github.com/RidicZhi/react-native-numeric-pad"
+}
