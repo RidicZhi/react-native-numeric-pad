@@ -12,22 +12,9 @@ Decimal Input            										|  Integer Input
 
 ## 🚀 Getting Started
 
-  
-
-**via Yarn**
-
-```
-
-yarn add react-native-numeric-pad
-
-```
-
-  
-
 **via NPM**
 
 ```
-
 npm i react-native-numeric-pad
 
 📗 Note
@@ -35,7 +22,12 @@ This component has a peer dependency: "react-native": "^0.63.4", to smoothly mat
 project you may ues:
 
 npm i react-native-numeric-pad --legacy-peer-deps
+```
 
+**via Yarn**
+
+```
+yarn add react-native-numeric-pad
 ```
   
 ## 🛻 Usage
@@ -47,9 +39,9 @@ import  NumericPad  from  'react-native-numeric-pad'
 ...
 
 <NumericPad
-	numLength={8}
-	onValueChange={(v) => { setState(v)} }
-	allowDecimal={true}
+  numLength={8}
+  onValueChange={(v) => { setState(v)} }
+  allowDecimal={true}
 }/>
 ```
 
@@ -110,8 +102,8 @@ const [amount, setAmount] = useState('')
 const numpadRef = useRef(null)
 
 return (
-  <View  style={styles.container}>
-    <View  style={styles.shadowBox  }>
+  <View style={styles.container}>
+    <View style={styles.shadowBox}>
       <Text>{I18n.translate('amount')} $</Text>
       <TextInput
         style={styles.amountTxt}
@@ -124,8 +116,8 @@ return (
         />
     </View>
 
-    <View  style={styles.keyboardContainer}>
-      <Button  style={styles.btn}  type='primary'
+    <View style={styles.keyboardContainer}>
+      <Button style={styles.btn}  type='primary'
         onPress={() => {}}
         disabled={!amount}>
         {I18n.translate('confirm') + ' →'}
@@ -136,13 +128,14 @@ return (
         numLength={8}
         buttonSize={60}
         activeOpacity={0.1}
-        onValueChange={value  =>  setAmount(value)}
+        onValueChange={value => setAmount(value)}
         allowDecimal={true}
+        // Try them to understand each area :)
         // style={{ backgroundColor: 'black', paddingVertical: 12 }}
         // buttonAreaStyle={{ backgroundColor: 'gray' }}
         // buttonItemStyle={{ backgroundColor: 'red' }}
-        rightBottomButton={<Ionicons  name={'ios-backspace-outline'}  size={28}  color={'#000'}  />}
-        onRightBottomButtonPress={ () => { numpadRef.current.clear() }
+        rightBottomButton={<Ionicons name={'ios-backspace-outline'} size={28} color={'#000'}/>}
+        onRightBottomButtonPress={() => {numpadRef.current.clear()}
         }
       />
     </View>
@@ -151,56 +144,56 @@ return (
 }
 
 
-const  styles = StyleSheet.create({
-	container: {
-		flex:  1,
-		padding:  LAYOUT['spacing-05']
-	},
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: LAYOUT['spacing-05']
+  },
   shadowBox: {
-    width:  '100%',
-    borderRadius:  LAYOUT['spacing-03'],
-    padding:  LAYOUT['spacing-05'],
-    backgroundColor:  COLORS.WHITE,
+    width: '100%',
+    borderRadius: LAYOUT['spacing-03'],
+    padding: LAYOUT['spacing-05'],
+    backgroundColor: COLORS.WHITE,
     shadowOffset: {
-      height:  3,
-      width:  3
-	  },
-		shadowOpacity:  0.15,
-		shadowRadius:  5,
-		shadowColor:  '#1D2660',
-		elevation:  5
-	},
-	amountTxt: {
-		fontSize:  38,
-		fontWeight:  '700',
-		lineHeight:  40,
-		marginTop:  LAYOUT['spacing-06'],
-		color:  COLORS['brand-01']
-	},
-	keyboardContainer: {
-		width:  deviceWidth,
-		height:  deviceHeight * 0.46,
-		borderRadius:  26,
-		justifyContent:  'center',
-		alignItems:  'center',
-		paddingHorizontal:  16,
-		position:  'absolute',
-		bottom:  0,
-		backgroundColor:  COLORS.WHITE,
-		shadowOffset: {
-      height:  3,
-      width:  3
-		},
-		shadowOpacity:  0.15,
-		shadowRadius:  5,
-		shadowColor:  '#1D2660',
-		elevation:  5
-	},
-	btn: {
-		width:  '100%',
-		marginTop:  10,
-		backgroundColor:  COLORS['brand-01']
-	}
+      height: 3,
+      width: 3
+    },
+    shadowOpacity: 0.15,
+    shadowRadius: 5,
+    shadowColor: '#1D2660',
+    elevation: 5
+  },
+  amountTxt: {
+    fontSize: 38,
+    fontWeight: '700',
+    lineHeight: 40,
+    marginTop: LAYOUT['spacing-06'],
+    color: COLORS['brand-01']
+  },
+  keyboardContainer: {
+    width: deviceWidth,
+    height: deviceHeight * 0.46,
+    borderRadius: 26,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    position: 'absolute',
+    bottom: 0,
+    backgroundColor: COLORS.WHITE,
+    shadowOffset: {
+      height: 3,
+      width: 3
+    },
+    shadowOpacity: 0.15,
+    shadowRadius: 5,
+    shadowColor: '#1D2660',
+    elevation: 5
+  },
+  btn: {
+    width: '100%',
+    marginTop: 10,
+    backgroundColor: COLORS['brand-01']
+  }
 })
 ```
 
