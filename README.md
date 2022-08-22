@@ -1,14 +1,17 @@
 
 # 📱 React Native Numeric Pad 📱
 
-  
-
 A React Native component for amount or verification code input. It easily handles both decimals and integers, and runs smoothly for both IOS and Android. The design is simple and clear with numbers, dot, and one custom button.
 
 ## 💃 Demo
 Decimal Input            										|  Integer Input
 :--------------------------------------------------------------:|:--------------------------------------------------------------:
 <img src="./screenshots/demo_decimal.png" alt="demo_decimal" width="350"/>  |  <img src="./screenshots/demo_integer.png" alt="demo_integer" width="350"/>
+
+📗 Note
+1. This keyboard has basic input validation such as number of point and the point's position.
+2. This package only contains the number pad(second half screen). You need to bind the value and a handler function with your onw component(see my example).
+3. The value output form this keyboard is a string type. Don't forget to convert to achieve your goal🤙
 
 ## 🚀 Getting Started
 
