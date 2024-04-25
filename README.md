@@ -82,9 +82,10 @@ import  NumericPad  from  'react-native-numeric-pad'
   
 
 | Prop | Description |
-| ----------------------------- | -----------------------------------------------------|
-|numpadRef.current.clearAll()   |This method completely clears the entered code.       |
-|numpadRef.current.clear() 		|This method only delete last number of entered code.  |
+| -----------------------------     | -----------------------------------------------------------|
+|numpadRef.current.clearAll()       |This method completely clears the entered code.             |
+|numpadRef.current.clear() 		      |This method only delete last number of entered code.        |
+|numpadRef.current.setValue(val) 		|This method sets the numpad's input to the specified value  |
 
   
 

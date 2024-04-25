@@ -75,6 +75,22 @@ const NumericPad = React.forwardRef(
         if (input.length > 0) {
           setInput('')
         }
+      },
+      setValue: (newValue) => {
+        // Check for valid value based on rules (e.g., respecting numLength and decimal handling)
+        if (typeof newValue === 'string' && newValue.length <= numLength) {
+          if (!allowDecimal && newValue.includes('.')) {
+            // Ignore setting the value if decimals are not allowed
+            return;
+          }
+          if (newValue.includes('.')) {
+            const parts = newValue.split('.');
+            if (parts[1].length > 2) { // Assuming you want at most two digits after the decimal
+              newValue = parts[0] + '.' + parts[1].substring(0, 2);
+            }
+          }
+          setInput(newValue);
+        }
       }
     }
 
